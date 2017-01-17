@@ -12,7 +12,9 @@ public class TestStep extends abstractStep {
 
     @Override
     void execute(){
-
+        Test1()
+        Test2()
+        Test3()
     }
 
     void Test1(){

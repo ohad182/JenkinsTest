@@ -25,7 +25,7 @@ class TestPipeline implements Serializable {
             Stage testStage = new Stage(script,'TestStage2')
 
             testStage.AddStep('Step1',new TestStep(script,'step-test2'))
-            testStage.AddStep('Step1',new TestStep(script,'step-test3'))
+            testStage.AddStep('Step2',new TestStep(script,'step-test3'))
             stages << testStage
         }
     

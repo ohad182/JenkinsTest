@@ -33,7 +33,7 @@ class TestPipeline implements Serializable {
         TestPipeline(def script) {
             this.script = script
             script.echo "TestPipeline"
-            buildDefaultPipeline()
+            
         }  
 
         def withTestStage() {
@@ -58,6 +58,7 @@ class TestPipeline implements Serializable {
 
   
     void execute() {
+        buildDefaultPipeline()
         // `stages.each { ... }` does not work, see https://issues.jenkins-ci.org/browse/JENKINS-26481
         for (Stage stage : stages) {
             stage.execute()

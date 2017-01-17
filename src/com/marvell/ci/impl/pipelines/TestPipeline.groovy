@@ -38,7 +38,7 @@ class TestPipeline implements Serializable {
 
         def withTestStage() {
 
-            Stage testStage = new Stage('TestStage',script)
+            Stage testStage = new Stage(script,'TestStage')
 
             testStage.AddStep('Step1',new TestStep(script))
             stages << testStage

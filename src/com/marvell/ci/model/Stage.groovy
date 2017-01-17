@@ -17,7 +17,7 @@ class Stage implements IStage  {
     @Override
     void execute() {
         script.stage(stageName) {
-           parallel (stepsMap);
+           script.parallel (stepsMap);
         }
     }
 

@@ -51,7 +51,7 @@ class TestPipeline implements Serializable {
 
         def buildDefaultPipeline() {
             script.echo "building"
-            withTestStage()           
+            withTestStage
         }
 
  //   }

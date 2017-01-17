@@ -5,9 +5,9 @@ import com.marvell.ci.model.abstractStep
 
 public class TestStep extends abstractStep {
 
-    TestStep(Object script)
+    TestStep(Object script,String name)
     {
-        super(script,'step1-test')
+        super(script,name)
     }
 
     @Override
@@ -18,15 +18,15 @@ public class TestStep extends abstractStep {
     }
 
     void Test1(){
-        script.echo "Test1"
+        script.echo "Test1 - ${stepName}"
     }
 
     void Test2(){
-        script.echo "Test2"
+        script.echo "Test2 - ${stepName}"
     }
 
     void Test3(){
-        script.echo "Test3"
+        script.echo "Test3 - ${stepName}"
     }
 
 }

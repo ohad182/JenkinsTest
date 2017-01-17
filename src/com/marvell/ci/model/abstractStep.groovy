@@ -1,4 +1,4 @@
-package model.stages.abstract
+package com.marvell.ci.model
 
 /**
 * This class implements IStep so he can override execute 

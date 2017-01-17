@@ -1,4 +1,4 @@
-package model.stages.abstract
+package com.marvell.ci.model
 
 public interface IStage extends Serializable {
 

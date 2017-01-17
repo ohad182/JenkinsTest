@@ -1,6 +1,8 @@
 
 package com.marvell.ci.impl.steps
 
+import com.marvell.ci.model.abstractStep
+
 public class TestStep extends abstractStep {
 
     TestStep(Object script)
